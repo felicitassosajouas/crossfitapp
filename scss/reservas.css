@@ -1,0 +1,12 @@
+/*__________ RESERVAS __________*/
+a h3 {
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px;
+  border-color: #91739a;
+}
+
+.navreservar a h3 {
+  font-size: 12px;
+}
+/*# sourceMappingURL=reservas.css.map */

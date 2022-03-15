@@ -1,0 +1,15 @@
+/*__________ RESERVAS __________*/
+//variables
+$gris: rgb(34, 37, 37);
+$lila: rgb(160, 76, 196);
+$lilaclaro: rgb(145, 115, 154);
+$letras: rgb(186, 197, 197);
+a h3 {
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px;
+    border-color: $lilaclaro;
+}
+.navreservar a h3 {
+    font-size: 12px;
+}

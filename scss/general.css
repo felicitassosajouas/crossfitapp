@@ -1,0 +1,79 @@
+* {
+  background-color: #222525 !important;
+  color: #dde1e2;
+  font-family: 'Basic', sans-serif;
+  font-weight: 100 !important;
+}
+
+div img img-fluid {
+  padding: 25px;
+  margin-top: 0px;
+  max-width: 70% !important;
+  height: 40%;
+}
+
+#opacity {
+  opacity: 0.5;
+}
+
+h1 {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  background-color: #222525 !important;
+  font-size: 30px;
+  color: #a04cc4;
+  font-style: italic;
+}
+
+h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #91739a;
+  text-align: center;
+}
+
+h3 {
+  padding-left: 5px;
+  color: #bac5c5;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: whitesmoke !important;
+}
+
+a:active {
+  text-decoration: none !important;
+  color: whitesmoke !important;
+}
+
+a:link {
+  text-decoration: none !important;
+  color: whitesmoke !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+  color: whitesmoke !important;
+}
+
+ul li a {
+  font-size: 10px;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black !important;
+}
+
+ul li a .nav-link {
+  color: whitesmoke !important;
+}
+
+#navactive {
+  color: #a04cc4 !important;
+  font-style: bold;
+  font-weight: 520;
+}
+/*# sourceMappingURL=general.css.map */
