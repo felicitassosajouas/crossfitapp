@@ -1,0 +1,82 @@
+//GENERAL
+//variables
+$gris: rgb(34, 37, 37);
+$lila: rgb(160, 76, 196);
+$lilaclaro: rgb(145, 115, 154);
+$letras: rgb(186, 197, 197);
+*{
+    background-color: $gris !important;
+    color: rgb(221, 225, 226);
+    font-family: 'Basic', sans-serif;
+    font-weight: 100 !important;
+}
+//PORTADAS
+div img img-fluid{
+    padding: 25px;
+    margin-top: 0px;
+    max-width: 70% !important;
+    height: 40%;
+}
+
+#opacity {
+    opacity: 0.5;
+}
+
+h1{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: $gris !important;
+    font-size: 30px;
+    color: $lila;
+    font-style: italic;
+}
+
+h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $lilaclaro;
+    text-align: center;
+}
+h3 {
+    padding-left: 5px;
+    color: rgb(186, 197, 197);
+}
+
+//LINKS
+a:hover{
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+a:active {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+a:link {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+a:visited {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+//NAVEGADOR
+ul li a {
+    font-size: 10px;
+    font-weight: 400;
+    align-items: center;
+    color: black !important;
+    .nav-link {
+        color: whitesmoke !important;
+    }
+}
+
+#navactive {
+    color: $lila !important;
+    font-style: bold;
+    font-weight: 520;
+}
+
+
+
+
