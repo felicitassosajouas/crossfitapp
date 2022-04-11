@@ -1,33 +1,34 @@
-class usuario{
-    constructor(usuario, edad, pack) {
-        this.usuario = usuario;
-        this.edad   = edad;
-        this.pack  = pack;
-    }
-    abonoUsado(){
-        console.log("el pack que usa es de " + this.pack);
+alert("Debes ingresar tus datos para actualizar la información")
+class User {
+    constructor(nombre, email, password) {
+        this.nombre = nombre;
+        this.email = email;
+        this.password = password;
     }
 }
 
-alert("Ingrese sus datos")
-const usuario2 = new usuario(
-    prompt("Ingrese su usuario"),
-    parseInt(prompt("Ingrese su edad")),
-    parseInt(prompt("Ingrese el número de clases de su pack")),
-)
-console.log(usuario2)
+let usuarios = []
 
-const usuario3 = new usuario("usuario3", 25, 18)
-const usuario4 = new usuario("usuario4", 22, 18)
-
-
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-for(let i=0; i<=array.length; i++) { 
-    
-    if(i < 10) {
-        console.log("i es menor a 10")
-
-    }
-    console.log(i)
+if(localStorage.getItem('Users')) {
+    usuarios = JSON.parse(localStorage.getItem('Users'))
+} else {
+    localStorage.setItem('Users', JSON.stringify(usuarios))
 }
+
+let formUsers = document.getElementById('formUser')
+let botonUsers = document.getElementById('botonUsers')
+
+formUsers.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let nombre = document.getElementById('usernameID').value 
+    let email = document.getElementById('emailID').value 
+    let password = document.getElementById('passwordID').value 
+    const user = new User(nombre, email, password)
+    usuarios.push(user)
+
+    localStorage.setItem('Users', JSON.stringify(usuarios))
+
+    usuarios.push(User)
+    console.log(usuarios)
+    formUsers.reset()
+})

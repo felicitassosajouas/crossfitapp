@@ -84,4 +84,8 @@ a h3 {
   border: solid 1px;
   border-color: #91739a;
 }
+
+.navreservar a h3 {
+  font-size: 12px;
+}
 /*# sourceMappingURL=prueba.css.map */
