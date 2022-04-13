@@ -1,24 +1,27 @@
+//llamo elementos del DOM
 let horarios = document.getElementById("horarios");
 let botones = document.getElementsByTagName("input");
 let contador = 0;
-let dias = document.getElementById("dias")
+let dias = document.getElementsByClassName("dias")
 
+//agrego eventos (submit) para guardar las reservas 
 horarios.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log(botones)
 })
 
-for (const btn of botones) { //recorres la coleccion de inputs/botones
-    btn.addEventListener('click', () => {
-        console.log(btn.id + btn.value) //mostras el valor en consola
-    }
-)}
-
-
+//creo un array para guardar las reservas
 let arrayReservas = []
 
-if(localStorage.getItem('Reservas')) {
-    arrayReservas = JSON.parse(localStorage.getItem('Reservas'))
-} else {
-    localStorage.setItem('Reservas', JSON.stringify(arrayReservas)
-)}
+for (const btn of botones) { //recorro los botones
+    btn.addEventListener('click', () => { //agrego un evento a los botones
+        console.log(btn.id + btn.value) //mostras el valor en consola
+        arrayReservas.unshift(btn.id + btn.value) //muestro array en el storage
+        localStorage.setItem('Reservas', JSON.stringify(arrayReservas))
+        mensaje.innerHTML = 
+            `
+            <h4 class="listaReservasCSS">
+                Lista de reservas: ${(arrayReservas)}
+            </h4>`
+    })
+}

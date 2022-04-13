@@ -17,13 +17,14 @@
         <img src="./images/2021-usaw-weightlifting-nationals-lp-header-400x225.jpeg" height="auto" id="opacity" class="img-fluid" alt="...">
     </div>
     <h2>INICIO</h2>
-    <h3>Ingresar datos para actualizar información</h3>
+    <h3 id="ocultar">Ingresar datos para actualizar información</h3>
+    <div id="mensaje"></div>
     <div>
         <form id="formUser">
             <input type="text" autofocus name="username" id="usernameID" placeholder="Username" required>
             <input type="email" name="email" id="emailID" placeholder="Email" required>
             <input type="password" name="password" id="passwordID" placeholder="Password" required>
-            <button type="submit" class="btn btn-dark">Actualizar información</button>
+            <button type="submit" onclick="ocultarForm()"  class="btn btn-dark">Ingresar</button>
         </form><br><br>
     </div>
     

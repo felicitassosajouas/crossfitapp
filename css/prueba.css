@@ -78,7 +78,48 @@ h3 {
   margin: 5px;
   padding: 5px;
   border: solid 1px;
-  border-color: #91739a;
+  border-color: #423346;
+}
+/* watch sass no responde */
+
+h4 {
+  margin: 5px;
+  padding: 5px;
+  color: #91739a;
 }
 
-/*# sourceMappingURL=prueba.css.map */
+footer {
+  padding: 5px;
+}
+
+
+/*  --- PACKS --- */
+#centrarBoton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: aliceblue;
+  font-size: large !important;
+  font-weight: 500 !important;
+  font-size: large;
+}
+/*CARDS*/
+#row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+
+/* --- RESERVAS --- */
+ul li {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 35px;
+  list-style: none;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
+
+.listaReservasCSS {
+  color: #dde1e2 !important;
+}

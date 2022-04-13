@@ -1,0 +1,26 @@
+[
+    {
+        "día": "lunes",
+        "horarios": "08:00 AM, 12:00 AM, 18:00 AM, 21:00 AM"  
+    },
+    {
+        "día": "martes",
+        "horarios": "08:00 AM, 12:00 PM, 18:00 PM, 21:00 PM"
+    },
+    {
+        "día": "miércoles",
+        "horarios": "08:00 AM, 12:00 PM, 18:00 PM, 21:00 PM"
+    },
+    {
+        "día": "jueves",
+        "horarios": "08:00 AM, 12:00 PM, 18:00 PM, 21:00 PM"
+    },
+    {
+        "día": "viernes",
+        "horarios": "08:00 AM, 12:00 PM, 18:00 PM, 21:00 PM"
+    },
+    {
+        "día": "sábado",
+        "horarios": "10:00 AM, 11:00 AM, 12:00 PM"
+    }
+]

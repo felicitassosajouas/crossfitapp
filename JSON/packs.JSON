@@ -1,0 +1,17 @@
+[
+    {
+        "pack": "Pack de 12 clases",
+        "cantidad": 12,
+        "precio": 3800
+    },
+    {
+        "pack": "Pack de 16 clases",
+        "cantidad": 16,
+        "precio": 4200
+    },
+    {
+        "pack": "Pack de 24 clases",
+        "cantidad": 24,
+        "precio": 4500
+    }
+]

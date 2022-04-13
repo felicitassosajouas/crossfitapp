@@ -1,22 +1,45 @@
+//llamo elementos del DOM 
 let pack = document.getElementsByClassName('h2')
-let mensaje = document.getElementsByClassName('p')
-let cantidadClases = document.getElementById('clases')
+let botonComprar = document.getElementsByTagName('button')
 
-let boton1 = document.getElementById('boton1')
-let boton2 = document.getElementById('boton2')
-let boton3 = document.getElementById('boton3')
+//array donde voy a cargar la compra que se realice
+let arrayCompras = []
 
-//PACK 12
-boton1.addEventListener("click", () => {
-    console.log("pack 12 clases comprado");
+//aviso de la compra realizada
+let mensaje = document.getElementById("mensaje")
+
+//recorro los botones y agrego el evento correspondiente
+for (const btn of botonComprar) { 
+    btn.addEventListener('click', () => { 
+
+        console.log(btn.value) //muetro el click en la consola
+        arrayCompras.unshift(btn.value) //unshift para ver primero la última reserva cargada
+        localStorage.setItem('Última compra', JSON.stringify(arrayCompras)) //muestro el array en storage
+
+        mensaje.innerHTML = //agrego el mensaje al HTML
+            `
+                    <h4 class="mensajePacks">
+                        Se acreditaron: ${btn.className} en tu cuenta
+                    </h4>`
+        
 })
+}
 
-//PACK 16
-boton2.addEventListener("click", () => {
-    console.log("pack 16 clases comprado");
-})
+let Reservas = document.getElementById('divReservas')
 
-//PACK 24
-boton3.addEventListener("click", () => {
-    console.log("pack 24 clases comprado");
+fetch('../../JSON/packs.json')
+.then(promesa => promesa.json())
+.then(data => {
+    console.log(data)
+    data.forEach((reserva, indice) => {
+        divReservas.innerHTML += `
+        <div class="card" id="producto${indice}" style="width: 18rem;">
+        <div class="card-body">
+            <p class="card-title">${reserva.pack}</p>
+            <p class="card-text"> Cantidad de clases: ${reserva.cantidad}</p>
+            <p class="card-text"> Precio: $ ${reserva.precio}</p>
+            </div>
+        </div>
+        `
+    });
 })
