@@ -27,6 +27,7 @@ for (const btn of botonComprar) {
 
 let Reservas = document.getElementById('divReservas')
 
+//fetch para mostrar datos de un archivo JSON
 fetch('../../JSON/packs.json')
 .then(promesa => promesa.json())
 .then(data => {
